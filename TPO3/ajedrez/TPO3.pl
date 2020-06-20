@@ -279,7 +279,7 @@ tablerofilas([V|R],N,M) -->
     { ((V==5,A='&#9820;'); %Si el valor contenido en V es 5 entonces es una torre
         (V==6,A='&#9822;');%Si el valor contenido en V es 6 entonces es un caballo
         (V==7,A='&#9821;');%Si el valor contenido en V es 7 entonces es un alfil
-        (V==8,A='U+265B');%Si el valor contenido en V es 8 entonces es una reina
+        (V==8,A='&#9819;');%Si el valor contenido en V es 8 entonces es una reina
         (V==0,A='');%Si el valor contenido en V es 0 entonces no se mostrara ningun valor
         (nonvar(V) -> atom_number(A,V); A = '')),
       M1 is M + 1,
