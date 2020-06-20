@@ -152,8 +152,8 @@ pos_reina(F,C,(X,Y),1):-
 resolver(P,R,P1):-
     L=[TC,TF,CC,CF,AC,AF,RC,RF],
     domain(L,1,8),
-    (all_different([TC,CC,AC,RC]);
-        all_different([TF,CF,AF,RF])),
+%    (all_different([TC,CC,AC,RC]);
+%        all_different([TF,CF,AF,RF])),
         recorrer_Tablero(R,L),
     label(L),
     L2=[((TC,TF),5),((CC,CF),6),((AC,AF),7),((RC,RF),8)],
@@ -175,16 +175,21 @@ recorrer_Tablero([((X,Y),N)|T],[TC,TF,CC,CF,AC,AF,RC,RF]):-
 instanciar(T,[],T).
 instanciar([H|T],[((C,F),V)|T2],T4):-
     nth(F,[H|T],L),
-    element_at(V,C,L,L1),
-    element_at(L1,F,[H|T],T3),
+    %element_at(V,C,L,L1),
+    %element_at(L1,F,[H|T],T3),
+    reemplazar_elemento(V,C,L,L1),
+    reemplazar_elemento(L1,F,[H|T],T3),
     instanciar(T3,T2,T4).
 
-
-element_at(E,1,[_|Ls],[E|Ls]).
-element_at(E,X,[L|Ls0],[L|Ls]):-
-    X#>1,
-    X#= X0 +1,
-    element_at(E,X0,Ls0,Ls).
+reemplazar_elemento(E,1,[_|T],[E|T]).
+reemplazar_elemento(E,N,[H|T],[H|T1]):-
+    M is N-1,
+    reemplazar_elemento(E,M,T,T1).
+%element_at(E,1,[_|Ls],[E|Ls]).
+%element_at(E,X,[L|Ls0],[L|Ls]):-
+%    X#>1,
+%    X#= X0 +1,
+%    element_at(E,X0,Ls0,Ls).
 
 'httpserv.handle'("/ajedrez",Request,Response) :-
     http_parse_form(Request,Input),
@@ -334,4 +339,33 @@ resolver([[_,_,_,_,_,_,_,_],
     [_,_,_,_,_,_,_,_],
     [_,_,_,_,_,_,_,_],
     [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_]],[((4,1),2),((1,2),2),((5,2),4),((1,4),2),((5,4),3),((7,4),2),((2,5),2),((4,5),2),((1,6),2),((3,6),2),((7,6),2),((5,8),2)],R).*/
+    [_,_,_,_,_,_,_,_]],[((4,1),2),((1,2),2),((5,2),4),((1,4),2),((5,4),3),((7,4),2),((2,5),2),((4,5),2),((1,6),2),((3,6),2),((7,6),2),((5,8),2)],R).
+
+Resolucion primero configuracion
+[[_,_,_,_,_,_,_,_],
+ [_,_,_,_,_,_,_,_],
+ [_,_,C,_,_,_,_,_],
+ [_,_,R,_,_,_,_,_],
+ [_,_,_,_,_,_,_,A],
+ [_,_,_,_,T,_,_,_],
+ [_,_,_,_,_,_,_,_],
+ [_,_,_,_,_,_,_,_]]
+
+[[_,_,_,_,_,_,_,_],
+ [_,_,_,_,_,_,_,_],
+ [_,_,_,R,_,_,_,2],
+ [_,_,3,_,2,_,_,_],
+ [_,4,_,2,_,3,_,T],
+ [A,_,_,C,_,_,_,_],
+ [_,2,_,_,_,_,_,2],
+ [_,_,2,_,_,_,_,_]]
+
+[[_,_,_,_,_,_,_,_],
+ [_,_,_,_,_,_,_,_],
+ [_,_,_,_,_,_,_,_],
+ [8,_,_,_,_,_,_,_],
+ [_,_,_,_,6,_,_,_],
+ [7,_,_,_,_,_,_,_],
+ [_,_,_,_,_,_,_,_],
+ [_,_,_,_,_,_,_,_]]
+*/

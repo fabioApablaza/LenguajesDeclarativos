@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=latex 2020.5.5)  6 JUN 2020 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=latex 2020.5.5)  20 JUN 2020 12:08
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **InformeTPO3.tex
 (./InformeTPO3.tex
@@ -52,55 +51,55 @@ Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-./InformeTPO3.tex:5: Undefined control sequence.
+! Undefined control sequence.
 \GenericError  ...                                
                                                     #4  \errhelp \@err@     ...
 l.5 \title{
-           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+           \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./InformeTPO3.tex:5: Undefined control sequence.
+! Undefined control sequence.
 \GenericError  ...                                
                                                   \let \@err@               ...
 l.5 \title{
-           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+           \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./InformeTPO3.tex:5: Undefined control sequence.
+! Undefined control sequence.
 \GenericError  ...                                
                                                   \@empty \def \MessageBreak...
 l.5 \title{
-           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+           \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./InformeTPO3.tex:5: Undefined control sequence.
+! Undefined control sequence.
 \GenericError  ...                                
                                                      \endgroup 
 l.5 \title{
-           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+           \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./InformeTPO3.tex:5: Argument of \zap@space has an extra }.
+! Argument of \zap@space has an extra }.
 <inserted text> 
                 \par 
 l.5 \title{
-           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+           \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -110,18 +109,18 @@ your `}' was spurious, just type `2' and it will go away.
 
 Runaway argument?
 \@empty 
-./InformeTPO3.tex:5: Paragraph ended before \zap@space was complete.
+! Paragraph ended before \zap@space was complete.
 <to be read again> 
                    \par 
 l.5 \title{
-           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+           \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\expandafter \reserved@b \reserved@a ,\@nnil ,}\fi \reserved@a \ETC.
-./InformeTPO3.tex:6: Paragraph ended before \@fileswith@pti@ns was complete.
+! Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
 l.6 
@@ -132,7 +131,7 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\def \@currenvir {document}\edef \@currenvline {\on@line }\csname \ETC.
-./InformeTPO3.tex:14: Paragraph ended before \@fileswith@pti@ns was complete.
+! Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
 l.14 
@@ -143,7 +142,7 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
-./InformeTPO3.tex:19: Paragraph ended before \@fileswith@pti@ns was complete.
+! Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
 l.19 
@@ -154,19 +153,63 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
-./InformeTPO3.tex:30: Paragraph ended before \@fileswith@pti@ns was complete.
+! Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
-l.30 
+l.29 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-./InformeTPO3.tex:33: Argument of \@firstofone has an extra }.
+Runaway argument?
+\title {Center}\ifx \reserved@a \@currenvir \else \@badend {Center}\fi \ETC.
+! Paragraph ended before \@fileswith@pti@ns was complete.
+<to be read again> 
+                   \par 
+l.31 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+\title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
+! Paragraph ended before \@fileswith@pti@ns was complete.
+<to be read again> 
+                   \par 
+l.35 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+\title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
+! Paragraph ended before \@fileswith@pti@ns was complete.
+<to be read again> 
+                   \par 
+l.38 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+\title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
+! Paragraph ended before \@fileswith@pti@ns was complete.
+<to be read again> 
+                   \par 
+l.41 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@firstofone has an extra }.
 <inserted text> 
                 \par 
-l.33 \end{document}
+l.42 \end{document}
                    
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -176,10 +219,10 @@ argument that might be the root of the problem. But if
 your `}' was spurious, just type `2' and it will go away.
 
 Runaway argument?
-./InformeTPO3.tex:33: Paragraph ended before \@firstofone was complete.
+! Paragraph ended before \@firstofone was complete.
 <to be read again> 
                    \par 
-l.33 \end{document}
+l.42 \end{document}
                    
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -205,11 +248,11 @@ you'd better type `E' or `X' now and fix your file.
 
  
 Here is how much of TeX's memory you used:
- 1114 strings out of 492168
- 14506 string characters out of 6131585
+ 1115 strings out of 492168
+ 14515 string characters out of 6131585
  89927 words of memory out of 5000000
- 5549 multiletter control sequences out of 15000+600000
+ 5550 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,0n,35p,230b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,0n,35p,484b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 No pages of output.
