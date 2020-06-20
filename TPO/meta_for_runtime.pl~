@@ -1,0 +1,7 @@
+:- module(meta_for_runtime,do/2).
+do(MIN,MAX):-
+    	between(MIN,MAX,I),
+	display(I),
+	nl,
+	fail,
+	true.

@@ -1,0 +1,215 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=latex 2020.5.5)  6 JUN 2020 22:54
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**InformeTPO3.tex
+(./InformeTPO3.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2019/10/15 3.35 The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2019/10/15 3.35 Babel switching mechanism
+)
+(/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2019/10/15 3.35 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+
+(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count89
+)
+\es@quottoks=\toks16
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+))
+./InformeTPO3.tex:5: Undefined control sequence.
+\GenericError  ...                                
+                                                    #4  \errhelp \@err@     ...
+l.5 \title{
+           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./InformeTPO3.tex:5: Undefined control sequence.
+\GenericError  ...                                
+                                                  \let \@err@               ...
+l.5 \title{
+           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./InformeTPO3.tex:5: Undefined control sequence.
+\GenericError  ...                                
+                                                  \@empty \def \MessageBreak...
+l.5 \title{
+           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./InformeTPO3.tex:5: Undefined control sequence.
+\GenericError  ...                                
+                                                     \endgroup 
+l.5 \title{
+           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./InformeTPO3.tex:5: Argument of \zap@space has an extra }.
+<inserted text> 
+                \par 
+l.5 \title{
+           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@empty 
+./InformeTPO3.tex:5: Paragraph ended before \zap@space was complete.
+<to be read again> 
+                   \par 
+l.5 \title{
+           \Huge\textbf{Informe TPO N°3}\\ Lenguajes declarativos}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+\title {\expandafter \reserved@b \reserved@a ,\@nnil ,}\fi \reserved@a \ETC.
+./InformeTPO3.tex:6: Paragraph ended before \@fileswith@pti@ns was complete.
+<to be read again> 
+                   \par 
+l.6 
+    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+\title {\def \@currenvir {document}\edef \@currenvline {\on@line }\csname \ETC.
+./InformeTPO3.tex:14: Paragraph ended before \@fileswith@pti@ns was complete.
+<to be read again> 
+                   \par 
+l.14 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+\title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
+./InformeTPO3.tex:19: Paragraph ended before \@fileswith@pti@ns was complete.
+<to be read again> 
+                   \par 
+l.19 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+\title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
+./InformeTPO3.tex:30: Paragraph ended before \@fileswith@pti@ns was complete.
+<to be read again> 
+                   \par 
+l.30 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./InformeTPO3.tex:33: Argument of \@firstofone has an extra }.
+<inserted text> 
+                \par 
+l.33 \end{document}
+                   
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+./InformeTPO3.tex:33: Paragraph ended before \@firstofone was complete.
+<to be read again> 
+                   \par 
+l.33 \end{document}
+                   
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+)
+Runaway argument?
+\title {document}\ifx \reserved@a \@currenvir \else \@badend {documen\ETC.
+! File ended while scanning use of \@fileswith@pti@ns.
+<inserted text> 
+                \par 
+<*> InformeTPO3.tex
+                   
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> InformeTPO3.tex
+                   
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 1114 strings out of 492168
+ 14506 string characters out of 6131585
+ 89927 words of memory out of 5000000
+ 5549 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 29i,0n,35p,230b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
