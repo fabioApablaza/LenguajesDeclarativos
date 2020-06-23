@@ -56,7 +56,7 @@ remover_coordenadas_vacias([((_,_),0)|T],T1):-
     remover_coordenadas_vacias(T,T1).
 
 instanciar_fila(_,9,[],_,[]).
-instanciar_fila(M,N,[V|C],Input,[((N,M),V)|T]):-%Cambia las Coordenadas de lugar M y N
+instanciar_fila(M,N,[V|C],Input,[((N,M),V)|T]):-
     atom_number(AN,N),
     atom_number(AM,M),
     atom_concat('v',AN,A1),
@@ -130,8 +130,7 @@ resolver(P,R,P1):-
     domain(L,1,8),
 %    all_different([[(TC,TF)],[(CC,CF)],[(AC,AF)],[(RC,RF)]]),
 %    (all_different([TC,CC,AC,RC]);
-%        all_different([TF,CF,AF,RF])),
-    
+%        all_different([TF,CF,AF,RF])),    
         recorrer_Tablero(R,L),
     label(L),
     L2=[((TC,TF),5),((CC,CF),6),((AC,AF),7),((RC,RF),8)],
@@ -141,7 +140,6 @@ resolver(P,R,P1):-
 %Torre: &#9820; Caballo: &#9822; Alfil: &#9821; Reina: &#9819;
 
 %Predicado para recorrer la lista de los casilleros y determinar las posiciones de las piezas
-
 recorrer_Tablero([],_).
 recorrer_Tablero([((X,Y),N)|T],[TC,TF,CC,CF,AC,AF,RC,RF]):-
     (pos_torre(TF,TC,(X,Y),N1),
@@ -151,6 +149,7 @@ recorrer_Tablero([((X,Y),N)|T],[TC,TF,CC,CF,AC,AF,RC,RF]):-
     N1+N2+N3+N4#=N,
     recorrer_Tablero(T,[TC,TF,CC,CF,AC,AF,RC,RF]).
 
+%Predicado para insertar las piezas sobre la lista que se va a mostrar por pantalla
 instanciar(T,[],T).
 instanciar([H|T],[((C,F),V)|T2],T4):-
     nth(F,[H|T],L),
@@ -202,9 +201,10 @@ reemplazar_elemento(E,N,[H|T],[H|T1]):-
 	          width: 40px;
                   background-color: black;
                }",
-          "input{ padding:0; 
+          "td input{ padding:0; 
                   text-align:center;
                   border:0;
+                  font-size:22px;
                   height:40px;
                   width:40px;
                  }",
@@ -217,7 +217,7 @@ reemplazar_elemento(E,N,[H|T],[H|T1]):-
           div([id='principal'],[
               start_form("/ajedrez",[method="post"]),
               table(
-                  tbody(Lista)
+                  tbody(Lista) %En este lugar se generan los input (tablero)
               ),
               input(hidden,[value="resolver",name="accion"]),
               button([class="w3-button w3-black w3-round-xxlarge",type="submit"],"Resolver"),
