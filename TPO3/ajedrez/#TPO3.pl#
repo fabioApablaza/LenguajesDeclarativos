@@ -125,7 +125,7 @@ resolver(P,R,P1):-
     label(L),
     L2=[((TC,TF),5),((CC,CF),6),((AC,AF),7),((RC,RF),8)],
     instanciar(P,L2,P1).
-
+%Codigo Ascii de los emojis de las piezas
 %Torre: &#9820; Caballo: &#9822; Alfil: &#9821; Reina: &#9819;
 
 %Predicado para recorrer la lista de los casilleros y determinar las posiciones de las piezas
