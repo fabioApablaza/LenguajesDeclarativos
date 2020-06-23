@@ -14,6 +14,7 @@
 
 :- use_package(datafacts).
 :- data(ajedrez/1).
+
 %Predicado para obetener un tablero de ajedrez con los valores de los casilleros vacios
 tablero_vacio(L):-
     L=[L1,L2,L3,L4,L5,L6,L7,L8],
@@ -30,6 +31,7 @@ tablero_vacio(L):-
 vaciar_tablero:-
     tablero_vacio(P),
     set_fact(ajedrez(P)).
+
 %Predicado principal para mostrar la unica solucion del problema
 resolver_ajedrez(Input):-
     tablero_vacio(P),
@@ -42,7 +44,16 @@ instanciar_ajedrez(M,[C|R],Input,S):-
     instanciar_fila(M,1,C,Input,A),
     M1 is M+ 1,
     instanciar_ajedrez(M1,R,Input,T),
-    append(A,T,S).
+    remover_coordenadas_vacias(A,A1),
+    append(A1,T,S).
+
+%Predicado para quitar las coordenadas cuyo valor contenido es 0
+remover_coordenadas_vacias([],[]).
+remover_coordenadas_vacias([((N,M),V)|T],[((N,M),V)|T1]):-
+    V>0,
+    remover_coordenadas_vacias(T,T1).
+remover_coordenadas_vacias([((_,_),0)|T],T1):-
+    remover_coordenadas_vacias(T,T1).
 
 instanciar_fila(_,9,[],_,[]).
 instanciar_fila(M,N,[V|C],Input,[((N,M),V)|T]):-%Cambia las Coordenadas de lugar M y N
@@ -51,7 +62,7 @@ instanciar_fila(M,N,[V|C],Input,[((N,M),V)|T]):-%Cambia las Coordenadas de lugar
     atom_concat('v',AN,A1),
     atom_concat(A1,AM,VNM),
     get_form_value(Input,VNM,Atomo),
-     (form_empty_value(Atomo) -> true, V = 0
+     ((form_empty_value(Atomo) -> V = 0)
      ;
             V = Atomo
       ),
@@ -80,8 +91,8 @@ unificar(Var=[Val],Rows):-
      N is Val - 48,
      atom_concat('v',M,Var),
      atom_codes(M,[XR,YR]),
-     X is XR - 48,
-     Y is YR - 48,
+     Y is XR - 48,
+     X is YR - 48,
     nth(X,Rows,List),
     nth(Y,List,V),
     V = N.
@@ -119,13 +130,14 @@ resolver(P,R,P1):-
     domain(L,1,8),
 %    all_different([[(TC,TF)],[(CC,CF)],[(AC,AF)],[(RC,RF)]]),
 %    (all_different([TC,CC,AC,RC]);
-    %        all_different([TF,CF,AF,RF])),
+%        all_different([TF,CF,AF,RF])),
     
         recorrer_Tablero(R,L),
     label(L),
     L2=[((TC,TF),5),((CC,CF),6),((AC,AF),7),((RC,RF),8)],
     instanciar(P,L2,P1).
 
+%Codigo Ascii de los emojis de las piezas
 %Torre: &#9820; Caballo: &#9822; Alfil: &#9821; Reina: &#9819;
 
 %Predicado para recorrer la lista de los casilleros y determinar las posiciones de las piezas
