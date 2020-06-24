@@ -1,14 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=latex 2020.5.5)  22 JUN 2020 00:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=latex 2020.5.5)  24 JUN 2020 18:41
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **InformeTPO3.tex
 (./InformeTPO3.tex
 LaTeX2e <2019-10-01> patch level 1
 (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+(/usr/share/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -51,10 +52,10 @@ Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-! Undefined control sequence.
+./InformeTPO3.tex:6: Undefined control sequence.
 \GenericError  ...                                
                                                     #4  \errhelp \@err@     ...
-l.5 \title{
+l.6 \title{
            \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -62,10 +63,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./InformeTPO3.tex:6: Undefined control sequence.
 \GenericError  ...                                
                                                   \let \@err@               ...
-l.5 \title{
+l.6 \title{
            \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -73,10 +74,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./InformeTPO3.tex:6: Undefined control sequence.
 \GenericError  ...                                
                                                   \@empty \def \MessageBreak...
-l.5 \title{
+l.6 \title{
            \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -84,10 +85,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./InformeTPO3.tex:6: Undefined control sequence.
 \GenericError  ...                                
                                                      \endgroup 
-l.5 \title{
+l.6 \title{
            \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -95,10 +96,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Argument of \zap@space has an extra }.
+./InformeTPO3.tex:6: Argument of \zap@space has an extra }.
 <inserted text> 
                 \par 
-l.5 \title{
+l.6 \title{
            \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -109,10 +110,10 @@ your `}' was spurious, just type `2' and it will go away.
 
 Runaway argument?
 \@empty 
-! Paragraph ended before \zap@space was complete.
+./InformeTPO3.tex:6: Paragraph ended before \zap@space was complete.
 <to be read again> 
                    \par 
-l.5 \title{
+l.6 \title{
            \Huge\textbf{Informe TPO N°3} \\ Lenguajes declarativos}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -120,10 +121,10 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\expandafter \reserved@b \reserved@a ,\@nnil ,}\fi \reserved@a \ETC.
-! Paragraph ended before \@fileswith@pti@ns was complete.
+./InformeTPO3.tex:7: Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
-l.6 
+l.7 
     
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -131,10 +132,10 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\def \@currenvir {document}\edef \@currenvline {\on@line }\csname \ETC.
-! Paragraph ended before \@fileswith@pti@ns was complete.
+./InformeTPO3.tex:15: Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
-l.14 
+l.15 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -142,10 +143,10 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
-! Paragraph ended before \@fileswith@pti@ns was complete.
+./InformeTPO3.tex:20: Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
-l.19 
+l.20 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -153,7 +154,7 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
-! Paragraph ended before \@fileswith@pti@ns was complete.
+./InformeTPO3.tex:29: Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
 l.29 
@@ -164,7 +165,7 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {Center}\ifx \reserved@a \@currenvir \else \@badend {Center}\fi \ETC.
-! Paragraph ended before \@fileswith@pti@ns was complete.
+./InformeTPO3.tex:31: Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
 l.31 
@@ -175,7 +176,7 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
-! Paragraph ended before \@fileswith@pti@ns was complete.
+./InformeTPO3.tex:35: Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
 l.35 
@@ -186,51 +187,18 @@ My plan is to forget the whole thing and hope for the best.
 
 Runaway argument?
 \title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
-! Paragraph ended before \@fileswith@pti@ns was complete.
+./InformeTPO3.tex:39: Paragraph ended before \@fileswith@pti@ns was complete.
 <to be read again> 
                    \par 
-l.38 
+l.39 
      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-Runaway argument?
-\title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
-! Paragraph ended before \@fileswith@pti@ns was complete.
-<to be read again> 
-                   \par 
-l.41 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@firstofone has an extra }.
-<inserted text> 
-                \par 
-l.42 \end{document}
-                   
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@firstofone was complete.
-<to be read again> 
-                   \par 
-l.42 \end{document}
-                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 )
 Runaway argument?
-\title {document}\ifx \reserved@a \@currenvir \else \@badend {documen\ETC.
+\title {\@firstoftwo {\@ssect {\z@ }{-3.5ex \@plus -1ex \@minus -.2ex\ETC.
 ! File ended while scanning use of \@fileswith@pti@ns.
 <inserted text> 
                 \par 
@@ -248,11 +216,11 @@ you'd better type `E' or `X' now and fix your file.
 
  
 Here is how much of TeX's memory you used:
- 1115 strings out of 492168
- 14515 string characters out of 6131585
- 89927 words of memory out of 5000000
- 5550 multiletter control sequences out of 15000+600000
- 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1118 strings out of 492168
+ 14544 string characters out of 6131585
+ 89956 words of memory out of 5000000
+ 5552 multiletter control sequences out of 15000+600000
+ 3940 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,0n,35p,484b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,0n,35p,485b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 No pages of output.

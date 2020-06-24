@@ -183,6 +183,7 @@ reemplazar_elemento(E,N,[H|T],[H|T1]):-
           "  * { box-sizing: border-box; }",
           "table { margin: 10px;
                    background-color: white;
+                   border-style: ridge;
             }",
           "tr:nth-child(even) td:nth-child(odd) input{
           	background:black;
@@ -204,7 +205,7 @@ reemplazar_elemento(E,N,[H|T],[H|T1]):-
           "td input{ padding:0; 
                   text-align:center;
                   border:0;
-                  font-size:22px;
+                  font-size:30px;
                   height:40px;
                   width:40px;
                  }",
