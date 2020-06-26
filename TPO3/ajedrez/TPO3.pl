@@ -39,7 +39,7 @@ resolver_ajedrez(Input):-
     resolver(P,R,P1),
     set_fact(ajedrez(P1)).
 
-instanciar_ajedrez(9,[],_,[]).
+ instanciar_ajedrez(9,[],_,[]).
 instanciar_ajedrez(M,[C|R],Input,S):-
     instanciar_fila(M,1,C,Input,A),
     M1 is M+ 1,
@@ -52,13 +52,14 @@ remover_coordenadas_vacias([],[]).
 remover_coordenadas_vacias([((N,M),V)|T],[((N,M),V)|T1]):-
     V>0,
     remover_coordenadas_vacias(T,T1).
+
 remover_coordenadas_vacias([((_,_),0)|T],T1):-
     remover_coordenadas_vacias(T,T1).
 
 instanciar_fila(_,9,[],_,[]).
 instanciar_fila(M,N,[V|C],Input,[((N,M),V)|T]):-
     atom_number(AN,N),
-    atom_number(AM,M),
+    atom_number(AM,M) ,
     atom_concat('v',AN,A1),
     atom_concat(A1,AM,VNM),
     get_form_value(Input,VNM,Atomo),
@@ -128,10 +129,7 @@ pos_reina(F,C,(X,Y),1):-
 resolver(P,R,P1):-
     L=[TC,TF,CC,CF,AC,AF,RC,RF],
     domain(L,1,8),
-%    all_different([[(TC,TF)],[(CC,CF)],[(AC,AF)],[(RC,RF)]]),
-%    (all_different([TC,CC,AC,RC]);
-%        all_different([TF,CF,AF,RF])),    
-        recorrer_Tablero(R,L),
+    recorrer_Tablero(R,L),
     label(L),
     L2=[((TC,TF),5),((CC,CF),6),((AC,AF),7),((RC,RF),8)],
     instanciar(P,L2,P1).
@@ -281,82 +279,9 @@ main:-
     format(user_error, "=> starting HTTP server~n", []),
     reload_service_registry,
     format(user_error, "   Server reachable at http://localhost:~w~n", [Port]),
-    %shell('firefox -new-tab http://localhost:8000/ajedrez'),
+    shell('firefox -new-tab http://localhost:8000/ajedrez'),
     http_loop(ExitCode),
     format(user_error, "=> HTTP server finished with exit code ~w~n", [ExitCode]),
     halt(ExitCode).
 
 :- initialization(main).
-
-/*resolver([[_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_]],[((5,7),4),((5,5),3),((4,8),2),((1,7),2),((1,5),2),((7,5),2),((2,4),2),((4,4),2),((1,3),2),((3,3),2),((7,3),2),((5,1),2)],R). 
-Segunda configuracion
-resolver([[_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_]],[((8,3),2),((3,4),3),((5,4),2),((2,5),4),((4,5),2),((6,5),3),((2,7),2),((8,7),2),((3,8),2)],R,L). 
-
-resolver([[_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_],
-    [_,_,_,_,_,_,_,_]],[((4,1),2),((1,2),2),((5,2),4),((1,4),2),((5,4),3),((7,4),2),((2,5),2),((4,5),2),((1,6),2),((3,6),2),((7,6),2),((5,8),2)],R).
-
-Resolucion primero configuracion
-[[_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,C,_,_,_,_,_],
- [_,_,R,_,_,_,_,_],
- [_,_,_,_,_,_,_,A],
- [_,_,_,_,T,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_]]
-
-[[_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,_,R,_,_,_,2],
- [_,_,3,_,2,_,_,_],
- [_,4,_,2,_,3,_,T],
- [A,_,_,C,_,_,_,_],
- [_,2,_,_,_,_,_,2],
- [_,_,2,_,_,_,_,_]]
-
-[[_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [8,_,_,_,_,_,_,_],
- [_,_,_,_,6,_,_,_],
- [7,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_]]
-
-[[_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,3,_,_,_,_,_],
- [5,4,8,_,_,_,_,_],
- [7,_,_,6,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_]] ? 
-[[_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,_,8,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,5],
- [7,_,_,6,_,_,_,_],
- [_,_,_,_,_,_,_,_],
- [_,_,_,_,_,_,_,_]]
-*/
